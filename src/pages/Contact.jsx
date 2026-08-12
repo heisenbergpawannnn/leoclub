@@ -1,16 +1,39 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { MEMBERSHIP_FORM_URL } from "../data/links.js";
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from "../data/email.js";
 
 export default function Contact() {
+  const formRef = useRef(null);
   const [status, setStatus] = useState("");
+  const [sending, setSending] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-    // This is a static site — there's no backend to send the message yet.
-    // Wire this up to a free form service (e.g. Formspree, StaticForms) when ready.
-    setStatus(
-      "This form isn't wired to a backend yet. Please reach us via Facebook or LinkedIn below, or connect a form service (e.g. Formspree) once ready."
-    );
+
+    if (!EMAILJS_TEMPLATE_ID) {
+      setStatus(
+        "The contact form's email template hasn't been set up yet. Please reach us via Facebook or email below in the meantime."
+      );
+      return;
+    }
+
+    setSending(true);
+    setStatus("");
+
+    emailjs
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current)
+      .then(() => {
+        setStatus("Thanks for reaching out! Your message has been sent — we'll get back to you soon.");
+        formRef.current.reset();
+      })
+      .catch((err) => {
+        console.error("EmailJS send failed:", err);
+        setStatus(
+          "Something went wrong sending your message. Please try emailing us directly at lckbudigandaki@gmail.com."
+        );
+      })
+      .finally(() => setSending(false));
   }
 
   return (
@@ -84,7 +107,7 @@ export default function Contact() {
 
           <div className="form-card">
             <h2 style={{ color: "var(--navy-dark)", marginTop: 0 }}>Send a Message</h2>
-            <form onSubmit={handleSubmit}>
+            <form ref={formRef} onSubmit={handleSubmit}>
               <div className="field">
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your full name" required />
@@ -103,24 +126,22 @@ export default function Contact() {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary" style={{ width: "100%", justifyContent: "center" }}>
-                Send Message
+              <button
+                type="submit"
+                className="btn btn-primary"
+                style={{ width: "100%", justifyContent: "center" }}
+                disabled={sending}
+              >
+                {sending ? "Sending…" : "Send Message"}
               </button>
               {status && (
                 <p style={{ fontSize: "0.85rem", color: "var(--muted)", marginTop: 12 }}>{status}</p>
               )}
             </form>
             <div className="note">
-              <strong>Note for club officers:</strong> this is a static site, so this form
-              can't send email on its own yet. Wire it up to a free form backend (e.g.{" "}
-              <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">
-                Formspree
-              </a>{" "}
-              or{" "}
-              <a href="https://www.staticforms.xyz" target="_blank" rel="noopener noreferrer">
-                StaticForms
-              </a>
-              ) in a few minutes, or just point people to Facebook/email for now.
+              <strong>Note for club officers:</strong> this form sends via EmailJS straight
+              from the browser — no backend needed. Service, template, and key live in{" "}
+              <code>src/data/email.js</code> if they ever need updating.
             </div>
           </div>
         </div>
