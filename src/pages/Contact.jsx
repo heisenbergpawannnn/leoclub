@@ -67,10 +67,7 @@ export default function Contact() {
                 <div>
                   <strong>Email</strong>
                   <br />
-                  <a href="mailto:info@leobudigandaki.org.np">info@leobudigandaki.org.np</a>
-                  <div style={{ fontSize: "0.82rem", color: "var(--muted)", marginTop: 2 }}>
-                    Placeholder — swap for the club's real address.
-                  </div>
+                  <a href="mailto:lckbudigandaki@gmail.com">lckbudigandaki@gmail.com</a>
                 </div>
               </li>
               <li>

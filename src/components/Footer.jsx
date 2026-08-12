@@ -31,7 +31,7 @@ export default function Footer() {
             >
               in
             </a>
-            <a href="mailto:info@leobudigandaki.org.np" aria-label="Email">
+            <a href="mailto:lckbudigandaki@gmail.com" aria-label="Email">
               @
             </a>
           </div>
