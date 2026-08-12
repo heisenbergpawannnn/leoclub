@@ -1,17 +1,25 @@
 // Leadership / members list.
-// To add more people or details (bio, photo), extend the MEMBERS array below.
-// photo (optional): put an image in public/team/ and reference it as "/team/your-file.jpg"
+// Photos live in public/team/ (compressed from the originals submitted by
+// the club). To add someone new: drop a photo in public/team/, add an
+// entry below with { name, role, photo, linkedin? }.
 const MEMBERS = [
-  {
-    name: "Prabin Paudel",
-    role: "President",
-    linkedin: "https://www.linkedin.com/in/prabin-paudel-a8a315231/",
-  },
-  {
-    name: "Pawan Raj Pandey",
-    role: "Member",
-    linkedin: "https://www.linkedin.com/in/pawanrajpandey/",
-  },
+  { name: "Prabin Paudel", role: "President", photo: "/team/prabin-paudel.jpg", linkedin: "https://www.linkedin.com/in/prabin-paudel-a8a315231/" },
+  { name: "Pawan Raj Pandey", role: "IT Lead", photo: "/team/pawan-raj-pandey.jpg", linkedin: "https://www.linkedin.com/in/pawanrajpandey/" },
+
+  { name: "Sijen Dangol", role: "Immediate Past President", photo: "/team/sijen-dangol.jpg" },
+  { name: "Ujjwal Karki", role: "Past President 24-25", photo: "/team/ujjwal-karki.jpg" },
+  { name: "Pratap Ratna Bajracharya", role: "Charter President", photo: "/team/pratap-ratna-bajracharya.jpg" },
+
+  { name: "Abishek Thapa", role: "Club Director", photo: "/team/abishek-thapa.jpg" },
+  { name: "Anmol Malla", role: "Joint Secretary", photo: "/team/anmol-malla.jpg" },
+  { name: "Bikash Bist", role: "Joint Treasurer", photo: "/team/bikash-bist.jpg" },
+  { name: "Prabin Buddhacharya", role: "Treasurer", photo: "/team/prabin-buddhacharya.jpg" },
+  { name: "Dilshan Mansuri", role: "Business Head", photo: "/team/dilshan-mansuri.jpg" },
+  { name: "Mili Koirala", role: "Chief Empowerment Officer", photo: "/team/mili-koirala.jpg" },
+  { name: "Pratima Paudel", role: "Women Empowerment Officer", photo: "/team/pratima-paudel.jpg" },
+  { name: "Prerana Poudel", role: "Health Head", photo: "/team/prerana-poudel.jpg" },
+  { name: "Rasmita KC", role: "Health Advisor", photo: "/team/rasmita-kc.jpg" },
+  { name: "Priyanka Bajracharya", role: "Finance Advisor", photo: "/team/priyanka-bajracharya.jpg" },
 ];
 
 export default function Team() {
@@ -29,41 +37,27 @@ export default function Team() {
           <div className="section-header">
             <span className="eyebrow">Leadership &amp; Members</span>
             <h2>Meet the Club</h2>
-            <p>
-              This is a starting roster — club officers, send us bios and photos for
-              everyone and we'll fill this page out.
-            </p>
+            <p>Our current executive team, past leadership, and members.</p>
           </div>
-          <div className="card-grid">
+          <div className="team-grid">
             {MEMBERS.map((m) => (
-              <div className="card" key={m.name}>
-                {m.photo ? (
-                  <img
-                    src={m.photo}
-                    alt={m.name}
-                    style={{
-                      width: 72,
-                      height: 72,
-                      borderRadius: "50%",
-                      objectFit: "cover",
-                      marginBottom: 16,
-                    }}
-                  />
-                ) : (
-                  <div className="icon">&#128100;</div>
-                )}
-                <h3>{m.name}</h3>
-                <p style={{ fontWeight: 600, color: "var(--sky)", marginBottom: 6 }}>{m.role}</p>
-                {m.linkedin && (
-                  <a
-                    href={m.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ fontSize: "0.85rem", color: "var(--navy)" }}
-                  >
-                    View LinkedIn &rarr;
-                  </a>
-                )}
+              <div className="team-card" key={m.name}>
+                <div className="team-photo">
+                  {m.photo ? (
+                    <img src={m.photo} alt={m.name} />
+                  ) : (
+                    <span className="team-photo-fallback">&#128100;</span>
+                  )}
+                </div>
+                <div className="team-body">
+                  <h3>{m.name}</h3>
+                  <p className="team-role">{m.role}</p>
+                  {m.linkedin && (
+                    <a href={m.linkedin} target="_blank" rel="noopener noreferrer">
+                      View LinkedIn &rarr;
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
