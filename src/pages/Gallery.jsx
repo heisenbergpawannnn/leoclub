@@ -23,18 +23,6 @@ export default function Gallery() {
 
       <section className="section">
         <div className="container">
-          <p
-            style={{
-              maxWidth: 640,
-              margin: "0 auto 36px",
-              textAlign: "center",
-              color: "var(--muted)",
-            }}
-          >
-            We're setting up this gallery — the tiles below are placeholders. Drop your
-            event photos into <code>public/gallery/</code> and add them in{" "}
-            <code>src/pages/Gallery.jsx</code> (see the comment at the top of the file).
-          </p>
           <div className="gallery-grid">
             {TILES.map((tile) =>
               tile.photo ? (

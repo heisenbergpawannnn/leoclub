@@ -138,11 +138,6 @@ export default function Contact() {
                 <p style={{ fontSize: "0.85rem", color: "var(--muted)", marginTop: 12 }}>{status}</p>
               )}
             </form>
-            <div className="note">
-              <strong>Note for club officers:</strong> this form sends via EmailJS straight
-              from the browser — no backend needed. Service, template, and key live in{" "}
-              <code>src/data/email.js</code> if they ever need updating.
-            </div>
           </div>
         </div>
       </section>

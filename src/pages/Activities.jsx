@@ -31,12 +31,6 @@ const ACTIVITIES = [
     body:
       "Ongoing outreach and volunteering work across Kathmandu, in line with the Lions/Leo mission of service above self.",
   },
-  {
-    icon: "➕",
-    title: "More to come",
-    body:
-      "This page is a living record. Club officers: send us your latest project write-ups and photos and we'll add them here.",
-  },
 ];
 
 export default function Activities() {
