@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MEMBERSHIP_FORM_URL } from "../data/links.js";
 
 export default function Contact() {
   const [status, setStatus] = useState("");
@@ -120,6 +121,25 @@ export default function Contact() {
                 StaticForms
               </a>
               ) in a few minutes, or just point people to Facebook/email for now.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <div className="cta-banner">
+            <h2>Ready to join us?</h2>
+            <p>Fill out our quick sign-up form to become a member or volunteer.</p>
+            <div className="cta-actions">
+              <a
+                className="btn btn-primary"
+                href={MEMBERSHIP_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a Member / Volunteer Now
+              </a>
             </div>
           </div>
         </div>

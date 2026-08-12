@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { getUpcomingEvents } from "../data/events.js";
 import EventCard from "../components/EventCard.jsx";
+import { MEMBERSHIP_FORM_URL } from "../data/links.js";
 
 export default function Home() {
   const upcoming = getUpcomingEvents().slice(0, 3);
@@ -22,11 +23,16 @@ export default function Home() {
               brought young leaders together to serve our community.
             </p>
             <div className="hero-actions">
-              <Link className="btn btn-primary" to="/about">
+              <a
+                className="btn btn-primary"
+                href={MEMBERSHIP_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a Member / Volunteer Now
+              </a>
+              <Link className="btn btn-outline" to="/about">
                 Learn About Us
-              </Link>
-              <Link className="btn btn-outline" to="/contact">
-                Get Involved
               </Link>
             </div>
           </div>
@@ -160,17 +166,17 @@ export default function Home() {
               we'd love to hear from you.
             </p>
             <div className="cta-actions">
-              <Link className="btn btn-primary" to="/contact">
-                Contact the Club
-              </Link>
               <a
-                className="btn btn-outline"
-                href="https://www.facebook.com/leobudigandaki/"
+                className="btn btn-primary"
+                href={MEMBERSHIP_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit our Facebook
+                Become a Member / Volunteer Now
               </a>
+              <Link className="btn btn-outline" to="/contact">
+                Contact the Club
+              </Link>
             </div>
           </div>
         </div>
