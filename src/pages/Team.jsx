@@ -4,7 +4,9 @@
 // entry below with { name, role, photo, linkedin? }.
 const MEMBERS = [
   { name: "Prabin Paudel", role: "President", photo: "/team/prabin-paudel.jpg", linkedin: "https://www.linkedin.com/in/prabin-paudel-a8a315231/" },
+  { name: "Jebish Pradhan", role: "Vice President", photo: "/team/jebish-pradhan.jpg", linkedin: "https://www.linkedin.com/in/jebishpradhan/" },
   { name: "Pawan Raj Pandey", role: "IT Lead", photo: "/team/pawan-raj-pandey.jpg", linkedin: "https://www.linkedin.com/in/pawanrajpandey/" },
+  { name: "Gaurav Neupane", role: "Secretary", photo: "/team/gaurav-neupane.jpg", linkedin: "https://www.linkedin.com/in/gaurav-neupane-64a0122a3/" },
 
   { name: "Sijen Dangol", role: "Immediate Past President", photo: "/team/sijen-dangol.jpg", linkedin: "https://www.linkedin.com/in/sijendangol/" },
   { name: "Ujjwal Karki", role: "Past President 24-25", photo: "/team/ujjwal-karki.jpg" },
@@ -16,15 +18,11 @@ const MEMBERS = [
   { name: "Prabin Buddhacharya", role: "Treasurer", photo: "/team/prabin-buddhacharya.jpg", linkedin: "https://www.linkedin.com/in/beprabin/" },
   { name: "Dilshan Mansuri", role: "Business Head", photo: "/team/dilshan-mansuri.jpg", linkedin: "https://www.linkedin.com/in/dilshan-mansuri-429a0327b/" },
   { name: "Mili Koirala", role: "Chief Empowerment Officer", photo: "/team/mili-koirala.jpg", linkedin: "https://www.linkedin.com/in/mili-koirala/" },
+  { name: "Niranjan Chapagain", role: "Membership Growth Chairperson", photo: "/team/niranjan-chapagain.jpg", linkedin: "https://www.linkedin.com/in/niranjan-chapagain-97453624a/" },
   { name: "Pratima Paudel", role: "Women Empowerment Officer", photo: "/team/pratima-paudel.jpg" },
   { name: "Prerana Poudel", role: "Health Head", photo: "/team/prerana-poudel.jpg" },
   { name: "Rasmita KC", role: "Health Advisor", photo: "/team/rasmita-kc.jpg", linkedin: "https://www.linkedin.com/in/rasmita-k-c-26623b3b9/" },
   { name: "Priyanka Bajracharya", role: "Finance Advisor", photo: "/team/priyanka-bajracharya.jpg" },
-
-  // Added via LinkedIn links only — no photo or confirmed role yet.
-  { name: "Jebish Pradhan", role: "Member", linkedin: "https://www.linkedin.com/in/jebishpradhan/" },
-  { name: "Niranjan Chapagain", role: "Member", linkedin: "https://www.linkedin.com/in/niranjan-chapagain-97453624a/" },
-  { name: "Gaurav Neupane", role: "Member", linkedin: "https://www.linkedin.com/in/gaurav-neupane-64a0122a3/" },
 ];
 
 export default function Team() {
