@@ -29,7 +29,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Become a Member / Volunteer Now
+                Become a Member Now
               </a>
               <Link className="btn btn-outline" to="/about">
                 Learn About Us
@@ -172,7 +172,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Become a Member / Volunteer Now
+                Become a Member Now
               </a>
               <Link className="btn btn-outline" to="/contact">
                 Contact the Club

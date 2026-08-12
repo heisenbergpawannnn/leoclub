@@ -130,7 +130,7 @@ export default function Contact() {
         <div className="container">
           <div className="cta-banner">
             <h2>Ready to join us?</h2>
-            <p>Fill out our quick sign-up form to become a member or volunteer.</p>
+            <p>Fill out our quick sign-up form to become a member.</p>
             <div className="cta-actions">
               <a
                 className="btn btn-primary"
@@ -138,7 +138,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Become a Member / Volunteer Now
+                Become a Member Now
               </a>
             </div>
           </div>

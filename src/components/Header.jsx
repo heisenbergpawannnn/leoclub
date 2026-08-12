@@ -54,7 +54,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Become a Member / Volunteer
+            Become a Member
           </a>
         </div>
       </nav>
