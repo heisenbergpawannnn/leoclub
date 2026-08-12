@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { getUpcomingEvents } from "../data/events.js";
+import EventCard from "../components/EventCard.jsx";
 
 export default function Home() {
+  const upcoming = getUpcomingEvents().slice(0, 3);
+
   return (
     <>
       <section className="hero">
@@ -52,6 +56,28 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {upcoming.length > 0 && (
+        <section className="section section-alt">
+          <div className="container">
+            <div className="section-header">
+              <span className="eyebrow">Save the Date</span>
+              <h2>Upcoming Events</h2>
+              <p>Join us — here's what's coming up next.</p>
+            </div>
+            <div className="events-grid">
+              {upcoming.map((event) => (
+                <EventCard key={event.id} event={event} variant="compact" />
+              ))}
+            </div>
+            <p style={{ textAlign: "center", marginTop: 32 }}>
+              <Link className="btn btn-outline-dark" to="/events">
+                See All Events &rarr;
+              </Link>
+            </p>
+          </div>
+        </section>
+      )}
 
       <section className="section">
         <div className="container">
