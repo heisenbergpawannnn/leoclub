@@ -32,7 +32,7 @@ export default function About() {
             </div>
           </div>
           <div className="media">
-            <img src="/logo.jpg" alt="Club emblem" />
+            <img src="/logo.png" alt="Club emblem" />
           </div>
         </div>
       </section>

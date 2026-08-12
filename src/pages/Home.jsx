@@ -37,7 +37,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-logo-wrap">
-            <img src="/logo.jpg" alt="Leo Club of Kathmandu Budigandaki official emblem" />
+            <img src="/logo.png" alt="Leo Club of Kathmandu Budigandaki official emblem" />
           </div>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
       <section className="section section-alt">
         <div className="container two-col">
           <div className="media">
-            <img src="/logo.jpg" alt="Club emblem" />
+            <img src="/logo.png" alt="Club emblem" />
           </div>
           <div>
             <span

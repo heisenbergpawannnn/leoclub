@@ -24,7 +24,7 @@ export default function Header() {
     <header className="site-header">
       <nav className="nav">
         <NavLink className="brand" to="/">
-          <img src="/logo.jpg" alt="Leo Club of Kathmandu Budigandaki logo" />
+          <img src="/logo.png" alt="Leo Club of Kathmandu Budigandaki logo" />
           <span className="brand-text">
             Leo Club of Kathmandu Budigandaki
             <small>Together We Serve, Together We Lead</small>
