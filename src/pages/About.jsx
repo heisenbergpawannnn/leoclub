@@ -111,18 +111,6 @@ export default function About() {
               <p>Partnering with sister Leo clubs across Kathmandu on shared community initiatives.</p>
             </li>
           </ul>
-          <p
-            style={{
-              textAlign: "center",
-              color: "var(--muted)",
-              fontSize: "0.9rem",
-              maxWidth: 560,
-              margin: "24px auto 0",
-            }}
-          >
-            This timeline reflects publicly documented activity. Club officers: replace this
-            note with your full, dated history and we'll update the page.
-          </p>
         </div>
       </section>
     </>
