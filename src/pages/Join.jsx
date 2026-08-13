@@ -3,6 +3,7 @@ import { JOIN_FORM_ENDPOINT } from "../data/join.js";
 
 const MAX_FILE_BYTES = 8 * 1024 * 1024; // 8MB — keeps the base64 payload well under Apps Script's request limit
 
+const BLOOD_GROUP_OPTIONS = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
 const OCCUPATION_OPTIONS = ["Student", "Working", "Business", "Other"];
 const HEAR_ABOUT_OPTIONS = [
   "Facebook",
@@ -277,14 +278,21 @@ export default function Join() {
                 <label htmlFor="bloodGroup">
                   Blood Group<span className="required-mark">*</span>
                 </label>
-                <input
-                  type="text"
+                <select
                   id="bloodGroup"
                   required
-                  placeholder="e.g. O+"
                   value={form.bloodGroup}
                   onChange={(e) => updateField("bloodGroup", e.target.value)}
-                />
+                >
+                  <option value="" disabled>
+                    Select your blood group
+                  </option>
+                  {BLOOD_GROUP_OPTIONS.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div className="field">

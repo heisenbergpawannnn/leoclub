@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { getUpcomingEvents } from "../data/events.js";
+import { GALLERY_EVENTS } from "../data/gallery.js";
 import EventCard from "../components/EventCard.jsx";
 
 export default function Home() {
   const upcoming = getUpcomingEvents().slice(0, 3);
+  const galleryPreview = GALLERY_EVENTS.filter((e) => e.photos.length > 0).slice(0, 3);
 
   return (
     <>
@@ -117,6 +119,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {galleryPreview.length > 0 && (
+        <section className="section">
+          <div className="container">
+            <div className="section-header">
+              <span className="eyebrow">Moments From Our Work</span>
+              <h2>From Our Gallery</h2>
+              <p>A look at what "Together We Serve" looks like in practice.</p>
+            </div>
+            <div className="gallery-grid">
+              {galleryPreview.map((event) => (
+                <Link
+                  className="gallery-item has-photo"
+                  to="/gallery"
+                  key={event.id}
+                  aria-label={`View photos from ${event.title}`}
+                >
+                  <img src={event.photos[0]} alt={event.title} />
+                  <span className="gallery-caption">{event.title}</span>
+                  {event.photos.length > 1 && (
+                    <span className="gallery-count">+{event.photos.length - 1}</span>
+                  )}
+                </Link>
+              ))}
+            </div>
+            <p style={{ textAlign: "center", marginTop: 32 }}>
+              <Link className="btn btn-outline-dark" to="/gallery">
+                See All Photos &rarr;
+              </Link>
+            </p>
+          </div>
+        </section>
+      )}
 
       <section className="section section-alt">
         <div className="container two-col">
