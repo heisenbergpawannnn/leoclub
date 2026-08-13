@@ -7,6 +7,7 @@ import Team from "./pages/Team.jsx";
 import Events from "./pages/Events.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Contact from "./pages/Contact.jsx";
+import Join from "./pages/Join.jsx";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="team" element={<Team />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="join" element={<Join />} />
       </Route>
     </Routes>
   );

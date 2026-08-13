@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import { MEMBERSHIP_FORM_URL } from "../data/links.js";
 import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from "../data/email.js";
 
 export default function Contact() {
@@ -148,14 +148,9 @@ export default function Contact() {
             <h2>Ready to join us?</h2>
             <p>Fill out our quick sign-up form to become a member.</p>
             <div className="cta-actions">
-              <a
-                className="btn btn-primary"
-                href={MEMBERSHIP_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link className="btn btn-primary" to="/join">
                 Become a Member Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

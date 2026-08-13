@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { MEMBERSHIP_FORM_URL } from "../data/links.js";
 
 const NAV_LINKS = [
   { to: "/", label: "Home" },
@@ -48,14 +47,9 @@ export default function Header() {
               {link.label}
             </NavLink>
           ))}
-          <a
-            className="btn btn-primary btn-nav"
-            href={MEMBERSHIP_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <NavLink className="btn btn-primary btn-nav" to="/join">
             Become a Member
-          </a>
+          </NavLink>
         </div>
       </nav>
     </header>

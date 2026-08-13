@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { getUpcomingEvents } from "../data/events.js";
 import EventCard from "../components/EventCard.jsx";
-import { MEMBERSHIP_FORM_URL } from "../data/links.js";
 
 export default function Home() {
   const upcoming = getUpcomingEvents().slice(0, 3);
@@ -23,14 +22,9 @@ export default function Home() {
               brought young leaders together to serve our community.
             </p>
             <div className="hero-actions">
-              <a
-                className="btn btn-primary"
-                href={MEMBERSHIP_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link className="btn btn-primary" to="/join">
                 Become a Member Now
-              </a>
+              </Link>
               <Link className="btn btn-outline" to="/about">
                 Learn About Us
               </Link>
@@ -166,14 +160,9 @@ export default function Home() {
               we'd love to hear from you.
             </p>
             <div className="cta-actions">
-              <a
-                className="btn btn-primary"
-                href={MEMBERSHIP_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link className="btn btn-primary" to="/join">
                 Become a Member Now
-              </a>
+              </Link>
               <Link className="btn btn-outline" to="/contact">
                 Contact the Club
               </Link>
