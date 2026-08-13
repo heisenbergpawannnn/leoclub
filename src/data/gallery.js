@@ -41,14 +41,4 @@ export const GALLERY_EVENTS = [
     title: "Club Meeting",
     photos: ["/gallery/club-meeting/1.jpg"],
   },
-  {
-    id: "joint-leo-club-event",
-    title: "Joint Leo Club Event",
-    photos: [],
-  },
-  {
-    id: "member-induction",
-    title: "Member Induction",
-    photos: [],
-  },
 ];

@@ -14,8 +14,8 @@
  * payment screenshots should be saved.
  */
 
-const SHEET_ID = "PASTE_YOUR_SPREADSHEET_ID_HERE";
-const FOLDER_ID = "PASTE_YOUR_DRIVE_FOLDER_ID_HERE";
+const SHEET_ID = "1bxH_bn9ld8t8tRHYi-lU4aebPrM81kKuA6dL-7tGGe4";
+const FOLDER_ID = "1QZmnPxPB_1nnRC0DPOAjlI12c0VRb3J5";
 const SHEET_NAME = "Site Submissions";
 
 const COLUMNS = [
