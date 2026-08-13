@@ -1,17 +1,20 @@
 /**
  * Leo Club of Kathmandu Budigandaki — "Become a Member" form backend.
  *
- * Paste this into the Apps Script project bound to whichever Google Sheet
- * should collect membership applications — including an existing sheet you
- * already use (e.g. the one your Google Form already writes to). It writes
- * to its own tab (SHEET_NAME below) so it never touches or reorders any
- * existing tab/data already in that spreadsheet. See SETUP.md in this
- * folder for the full step-by-step deployment guide.
+ * Works as a standalone Apps Script project (script.google.com -> New
+ * project) — it doesn't need to be opened from inside a specific Sheet.
+ * Set SHEET_ID below to whichever spreadsheet should collect membership
+ * applications, including an existing sheet you already use (e.g. the one
+ * your Google Form already writes to). It writes to its own tab
+ * (SHEET_NAME below) so it never touches or reorders any existing
+ * tab/data already in that spreadsheet. See SETUP.md in this folder for
+ * the full step-by-step deployment guide.
  *
  * Set FOLDER_ID below to the Google Drive folder where uploaded photos and
  * payment screenshots should be saved.
  */
 
+const SHEET_ID = "PASTE_YOUR_SPREADSHEET_ID_HERE";
 const FOLDER_ID = "PASTE_YOUR_DRIVE_FOLDER_ID_HERE";
 const SHEET_NAME = "Site Submissions";
 
@@ -68,7 +71,7 @@ function doPost(e) {
 }
 
 function getOrCreateSheet() {
-  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const spreadsheet = SpreadsheetApp.openById(SHEET_ID);
   return spreadsheet.getSheetByName(SHEET_NAME) || spreadsheet.insertSheet(SHEET_NAME);
 }
 
