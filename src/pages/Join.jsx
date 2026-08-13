@@ -166,9 +166,15 @@ export default function Join() {
               Fill out the form below to join us.
             </p>
 
+            <p className="form-legend">
+              <span className="required-mark">*</span> Required field — everything else is optional.
+            </p>
+
             <form onSubmit={handleSubmit}>
               <div className="field">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">
+                  Email<span className="required-mark">*</span>
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -180,7 +186,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label htmlFor="fullName">Full Name</label>
+                <label htmlFor="fullName">
+                  Full Name<span className="required-mark">*</span>
+                </label>
                 <input
                   type="text"
                   id="fullName"
@@ -193,7 +201,8 @@ export default function Join() {
 
               <div className="field">
                 <label htmlFor="clubDesignation">
-                  Club Designation [2026/27] <span style={{ fontWeight: 400 }}>(for old members)</span>
+                  Club Designation [2026/27]{" "}
+                  <span className="optional-tag">(Optional — for old members)</span>
                 </label>
                 <input
                   type="text"
@@ -205,7 +214,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label htmlFor="temporaryAddress">Temporary Address</label>
+                <label htmlFor="temporaryAddress">
+                  Temporary Address<span className="required-mark">*</span>
+                </label>
                 <input
                   type="text"
                   id="temporaryAddress"
@@ -216,7 +227,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label htmlFor="permanentAddress">Permanent Address</label>
+                <label htmlFor="permanentAddress">
+                  Permanent Address<span className="required-mark">*</span>
+                </label>
                 <input
                   type="text"
                   id="permanentAddress"
@@ -227,7 +240,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label htmlFor="contactNumber">Contact Number</label>
+                <label htmlFor="contactNumber">
+                  Contact Number<span className="required-mark">*</span>
+                </label>
                 <input
                   type="tel"
                   id="contactNumber"
@@ -238,7 +253,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label>Gender</label>
+                <label>
+                  Gender<span className="required-mark">*</span>
+                </label>
                 <div className="field-radio-group">
                   {["Male", "Female", "Others"].map((option) => (
                     <label key={option} className="field-radio">
@@ -257,7 +274,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label htmlFor="bloodGroup">Blood Group</label>
+                <label htmlFor="bloodGroup">
+                  Blood Group<span className="required-mark">*</span>
+                </label>
                 <input
                   type="text"
                   id="bloodGroup"
@@ -270,7 +289,8 @@ export default function Join() {
 
               <div className="field">
                 <label htmlFor="dob">
-                  Date of Birth [A.D.] <span style={{ fontWeight: 400 }}>(for birthday post)</span>
+                  Date of Birth [A.D.]<span className="required-mark">*</span>{" "}
+                  <span className="optional-tag">(for birthday post)</span>
                 </label>
                 <input
                   type="date"
@@ -282,7 +302,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label>Current Occupation/Status</label>
+                <label>
+                  Current Occupation/Status<span className="required-mark">*</span>
+                </label>
                 <div className="field-radio-group">
                   {OCCUPATION_OPTIONS.map((option) => (
                     <label key={option} className="field-radio">
@@ -311,7 +333,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label>How did you hear about LCK Budigandaki?</label>
+                <label>
+                  How did you hear about LCK Budigandaki?<span className="required-mark">*</span>
+                </label>
                 <div className="field-radio-group">
                   {HEAR_ABOUT_OPTIONS.map((option) => (
                     <label key={option} className="field-radio">
@@ -340,7 +364,9 @@ export default function Join() {
               </div>
 
               <div className="field">
-                <label htmlFor="expectation">Expectation from the club</label>
+                <label htmlFor="expectation">
+                  Expectation from the club<span className="required-mark">*</span>
+                </label>
                 <textarea
                   id="expectation"
                   rows={4}
@@ -352,7 +378,8 @@ export default function Join() {
 
               <div className="field">
                 <label htmlFor="photo">
-                  Photo for Social Media <span style={{ fontWeight: 400 }}>(birthday post, congratulations, appreciation etc.)</span>
+                  Photo for Social Media<span className="required-mark">*</span>{" "}
+                  <span className="optional-tag">(birthday post, congratulations, appreciation etc.)</span>
                 </label>
                 <input
                   type="file"
@@ -374,7 +401,9 @@ export default function Join() {
               </div>
 
               <div className="field" style={{ marginTop: 16 }}>
-                <label htmlFor="payment">Upload Payment Screenshot</label>
+                <label htmlFor="payment">
+                  Upload Payment Screenshot<span className="required-mark">*</span>
+                </label>
                 <input
                   type="file"
                   id="payment"
