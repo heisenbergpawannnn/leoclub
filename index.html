@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leo Club of Kathmandu Budigandaki</title>
     <meta name="description" content="Official website of the Leo Club of Kathmandu Budigandaki — Together We Serve, Together We Lead. Club No. 136440, established 2018." />
-    <script type="module" crossorigin src="/assets/index-B65dGblk.js"></script>
+    <script>
+      (function () {
+        const redirect = sessionStorage.getItem("redirect");
+        if (redirect) {
+          sessionStorage.removeItem("redirect");
+          const safeRedirect = redirect.startsWith("/") ? redirect : "/" + redirect;
+          window.history.replaceState(null, "", safeRedirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-C8DBxbRc.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CJ6vd77S.css">
   </head>
   <body>
