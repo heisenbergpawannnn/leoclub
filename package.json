@@ -2,6 +2,7 @@
   "name": "leo-club-kathmandu-budigandaki",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://lckbudigandaki.org.np",
   "type": "module",
   "scripts": {
     "dev": "vite",
