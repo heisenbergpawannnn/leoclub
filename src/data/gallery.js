@@ -10,35 +10,65 @@ export const GALLERY_EVENTS = [
     title: "Health Camp",
     photos: [
       "/gallery/health-camp/1.jpg",
-      "/gallery/health-camp/2.jpg",
-      "/gallery/health-camp/3.jpg",
-      "/gallery/health-camp/4.jpg",
+      "/gallery/health-camp/3.jpeg",
+      "/gallery/health-camp/2.jpeg",
     ],
   },
   {
     id: "shrawan-celebration-hunger-relief-program",
     title: "Shrawan Celebration & Hunger Relief Program",
     photos: [
-      "/gallery/shrawan-celebration-hunger-relief-program/3.jpg",
       "/gallery/shrawan-celebration-hunger-relief-program/1.jpg",
       "/gallery/shrawan-celebration-hunger-relief-program/2.jpg",
-      "/gallery/shrawan-celebration-hunger-relief-program/4.jpg",
-      "/gallery/shrawan-celebration-hunger-relief-program/5.jpg",
-      "/gallery/shrawan-celebration-hunger-relief-program/6.jpg",
+      "/gallery/shrawan-celebration-hunger-relief-program/3.jpg",
     ],
   },
   {
-    id: "community-outreach",
-    title: "Community Outreach",
+    id: "latex-workshop",
+    title: "LaTeX Workshop at Thapathali Campus",
     photos: [
-      "/gallery/community-outreach/1.jpg",
-      "/gallery/community-outreach/2.jpg",
-      "/gallery/community-outreach/3.jpg",
+      "/gallery/latex-workshop/1.jpg",
+      "/gallery/latex-workshop/2.jpg",
     ],
   },
   {
-    id: "club-meeting",
-    title: "Club Meeting",
-    photos: ["/gallery/club-meeting/1.jpg"],
+    id: "warm-blanket-distribution",
+    title: "Warm Blanket Distribution at Madarsa",
+    photos: [
+      "/gallery/warm-blanket-distribution/blanket-distribution-1.jpg",
+      "/gallery/warm-blanket-distribution/blanket-distribution-2.jpg"
+    ],
+  },
+  {
+    id: "blood-donation",
+    title: "Blood Donation Program",
+    photos: [
+      "/gallery/blood-donation/blood-donation-1.jpg",
+    ],
+  },
+  {
+    id: "dengue-awareness",
+    title: "Dengue Awareness",
+    photos: [
+      "/gallery/dengue-awareness/dengue-awareness-1.jpg",
+      "/gallery/dengue-awareness/dengue-awareness-2.jpg",
+    ],
+  },
+  {
+    id: "menstrual-hygiene",
+    title: "Menstrual Hygiene",
+    photos: [
+      "/gallery/menstrual-hygiene/menstrual-hygiene-1.jpg",
+      "/gallery/menstrual-hygiene/menstrual-hygiene-2.jpg",
+    ],
+  },
+  {
+    id: "tree-plantation",
+    title: "Tree Plantation Program",
+    photos: [
+      "/gallery/tree-plantation/tree-plantation-1.jpg",
+      "/gallery/tree-plantation/tree-plantation-2.jpg",
+      "/gallery/tree-plantation/tree-plantation-3.jpg",
+    ],
   },
 ];
