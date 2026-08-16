@@ -21,7 +21,7 @@ const MEMBERS = [
   
   { name: "Jenish Maharjan", role: "IT Head", photo: "/team/jenish-maharjan.jpg" },
   { name: "Dilshan Mansuri", role: "Business Head", photo: "/team/dilshan-mansuri.jpg", linkedin: "https://www.linkedin.com/in/dilshan-mansuri-429a0327b/" },
-  { name: "Prerana Poudel", role: "Health Head", photo: "/team/prerana-poudel.jpg" },
+  { name: "Prerana Poudel", role: "Health Head", photo: "/team/prerana-poudel-v2.jpg" },
   { name: "Rasmita KC", role: "Health Advisor", photo: "/team/rasmita-kc.jpg", linkedin: "https://www.linkedin.com/in/rasmita-k-c-26623b3b9/" },
   { name: "Priyanka Bajracharya", role: "Finance Advisor", photo: "/team/priyanka-bajracharya.jpg" },
   { name: "Loonibha Bajracharya", role: "General Member", photo: "/team/loonibha-bajracharya.png" },
