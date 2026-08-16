@@ -47,6 +47,17 @@ export default function About() {
               young people lead it together.
             </p>
           </div>
+
+          <div className="card" style={{ maxWidth: 760, margin: "0 auto 20px" }}>
+            <div className="icon">&#128187;</div>
+            <h3>Website &amp; Digital Support</h3>
+            <p>
+              This website was developed and maintained to help share the club’s service,
+              events, and community initiatives with a wider audience. We acknowledge the
+              contribution of <strong>Pawan Raj Pandey</strong>, IT Lead, and <strong>Prabin
+              Paudel</strong>, President, in supporting the club’s digital presence and communication.
+            </p>
+          </div>
           <div className="card-grid">
             <div className="card">
               <div className="icon">&#127981;</div>
