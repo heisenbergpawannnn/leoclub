@@ -18,9 +18,10 @@ export const GALLERY_EVENTS = [
     id: "shrawan-celebration-hunger-relief-program",
     title: "Shrawan Celebration & Hunger Relief Program",
     photos: [
-      "/gallery/shrawan-celebration-hunger-relief-program/1.jpg",
-      "/gallery/shrawan-celebration-hunger-relief-program/2.jpg",
-      "/gallery/shrawan-celebration-hunger-relief-program/3.jpg",
+      "/gallery/shrawan-celebration-hunger-relief-program/1.png",
+      "/gallery/shrawan-celebration-hunger-relief-program/2.png",
+      "/gallery/shrawan-celebration-hunger-relief-program/3.png",
+      "/gallery/shrawan-celebration-hunger-relief-program/4.png",
     ],
   },
   {
