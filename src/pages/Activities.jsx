@@ -66,8 +66,8 @@ export default function Activities() {
           <div className="container">
             <div className="section-header">
               <span className="eyebrow">Save the Date</span>
-              <h2>Current Events</h2>
-              <p>Upcoming and recent club programs featured here alongside our service activities.</p>
+              <h2>Our Events</h2>
+              <p>Club programs and events we’ve hosted and shared with our community.</p>
             </div>
             <div className="events-grid">
               {events.map((event) => (
