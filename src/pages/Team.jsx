@@ -31,11 +31,11 @@ const MEMBERS = [
 ];
 
 const PRESIDENTS = [
-  { name: "Prabin Paudel", role: "President, L.Y. 2026/27", photo: "/team/prabin-paudel.jpg", linkedin: "https://www.linkedin.com/in/prabin-paudel-a8a315231/" },
+  { name: "Prabin Paudel", role: "President, L.Y. 2026/27", photo: "/presidents/prabin-paudel.jpg", linkedin: "https://www.linkedin.com/in/prabin-paudel-a8a315231/" },
   { name: "Sijen Dangol", role: "President, L.Y. 2025/26", photo: "/presidents/sijen-dangol.jpg", linkedin: "https://www.linkedin.com/in/sijendangol/" },
   { name: "Ujjwal Karki", role: "President, L.Y. 2024/25", photo: "/presidents/ujjwal-karki.jpg"  },
   { name: "Aawash Regmi", role: "President, L.Y. 2023/24", photo: "/presidents/aawash-regmi.jpg", linkedin: "https://www.linkedin.com/in/aawash-regmi-3426b21a7/" },
-  { name: "Pratap Ratna Bajracharya", role: "President, L.Y. 2022/23", photo: "/team/pratap-ratna-bajracharya.jpg", linkedin: "https://www.linkedin.com/in/prb007/" },
+  { name: "Pratap Ratna Bajracharya", role: "President, L.Y. 2022/23", photo: "/presidents/pratap-ratna-bajracharya.jpg", linkedin: "https://www.linkedin.com/in/prb007/" },
 ]
 
 export default function Team() {
@@ -89,8 +89,8 @@ export default function Team() {
             {PRESIDENTS.map((p) => (
               <div className="team-card" key={p.name}>
                 <div className="team-photo">
-                  {m.photo ? (
-                    <img src={m.photo} alt={p.name} />
+                  {p.photo ? (
+                    <img src={p.photo} alt={p.name} />
                   ) : (
                     <span className="team-photo-fallback">&#128100;</span>
                   )}
@@ -99,7 +99,7 @@ export default function Team() {
                   <h3>{p.name}</h3>
                   <p className="team-role">{p.role}</p>
                   {p.linkedin && (
-                    <a href={m.linkedin} target="_blank" rel="noopener noreferrer">
+                    <a href={p.linkedin} target="_blank" rel="noopener noreferrer">
                       View LinkedIn &rarr;
                     </a>
                   )}
