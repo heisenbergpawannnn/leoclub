@@ -123,7 +123,7 @@ export default function About() {
 
             <li>
               <span className="year">2026/27</span>
-              <h4>Presidency of Leo [Prabin Paudel</h4>
+              <h4>Presidency of Leo Prabin Paudel</h4>
               <p>
                 Under the ongoing presidency of Leo Prabin Paudel, the club is placing a stronger focus on health and medical initiatives, working to expand its impact through health awareness programs, medical support, and community-focused healthcare projects.
               </p>
