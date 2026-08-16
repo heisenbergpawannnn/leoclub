@@ -49,7 +49,7 @@ export default function Home() {
             <span>Club Number</span>
           </div>
           <div className="stat">
-            <b>325</b>
+            <b>325 J</b>
             <span>Lions District, Nepal</span>
           </div>
           <div className="stat">

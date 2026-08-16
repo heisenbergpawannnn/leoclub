@@ -85,30 +85,48 @@ export default function About() {
           <ul className="timeline" style={{ maxWidth: 640, margin: "0 auto" }}>
             <li>
               <span className="year">2018</span>
-              <h4>Club Chartered</h4>
+              <h4>Club Chartered by Leo Suresh Adhikari</h4>
               <p>
-                The Leo Club of Kathmandu Budigandaki was officially established and
-                chartered as Club No. 136440, sponsored by the Lions Club of Kathmandu
-                Budhigandaki.
+               The Leo Club of Kathmandu Budhigandaki was officially established and chartered as Leo Club No. 136440, under the sponsorship of the Lions Club of Kathmandu Budhigandaki, with Leo Suresh Adhikari serving as its charter president.
               </p>
             </li>
+
             <li>
-              <span className="year">Ongoing</span>
-              <h4>Community Health Camps</h4>
-              <p>Regular health camps bringing basic checkups and care to the local community.</p>
+              <span className="year">2020/21</span>
+              <h4>Presidency of Leo Sashanka Pandey</h4>
+              <p>The 2020/21 Lions Year marked a new chapter in the club’s journey under the leadership of Leo Sashanka Pandey, with a continued focus on growth, service, and fellowship. </p>
             </li>
+
             <li>
-              <span className="year">Ongoing</span>
-              <h4>Shrawan Celebration &amp; Hunger Relief Program</h4>
+              <span className="year">2022/23</span>
+              <h4>Club Revival under Leo Pratap Ratna Bajracharya</h4>
+              <p>The club was revived under the leadership of Leo Pratap Ratna Bajracharya during the 2022/23 Lions Year, marking a new chapter in its journey of service and leadership.</p>
+            </li>
+
+            <li>
+              <span className="year">2023/24</span>
+              <h4>Presidency of Leo Aawash Regmi</h4>
+              <p> Under the presidency of Leo Aawash Regmi, the club continued to strengthen its service initiatives and engagement within the community. </p>
+            </li>
+
+            <li>
+              <span className="year">2024/25</span>
+              <h4>Presidency of Leo Ujjwal Karki</h4>
+              <p> Under the presidency of Leo Ujjwal Karki, the club focused on strengthening fellowship and building meaningful relationships with fellow Leo Clubs, laying the foundation for greater collaboration and collective service. </p>
+            </li>
+
+            <li>
+              <span className="year">2025/26</span>
+              <h4>Presidency of Leo Sijen Dangol</h4>
+              <p> Building on the strong fellowship established in previous years, the club organized impactful service projects, providing blankets, sanitary pads, stationery items, and other essential supplies to those in need. </p>
+            </li>
+
+            <li>
+              <span className="year">2026/27</span>
+              <h4>Presidency of Leo [Prabin Paudel</h4>
               <p>
-                An annual program held with Our Child Protection Foundation Nepal (OCPFN),
-                spending time with children and supporting their wellbeing.
+                Under the ongoing presidency of Leo Prabin Paudel, the club is placing a stronger focus on health and medical initiatives, working to expand its impact through health awareness programs, medical support, and community-focused healthcare projects.
               </p>
-            </li>
-            <li>
-              <span className="year">Ongoing</span>
-              <h4>Joint Leo Club Collaborations</h4>
-              <p>Partnering with sister Leo clubs across Kathmandu on shared community initiatives.</p>
             </li>
           </ul>
         </div>
