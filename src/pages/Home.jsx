@@ -73,8 +73,8 @@ export default function Home() {
               ))}
             </div>
             <p style={{ textAlign: "center", marginTop: 32 }}>
-              <Link className="btn btn-outline-dark" to="/events">
-                See All Events &rarr;
+              <Link className="btn btn-outline-dark" to="/activities">
+                See All Activities &amp; Events &rarr;
               </Link>
             </p>
           </div>

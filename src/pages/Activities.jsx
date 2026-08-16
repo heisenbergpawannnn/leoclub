@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { getSortedEvents } from "../data/events.js";
+import EventCard from "../components/EventCard.jsx";
 
 const ACTIVITIES = [
   {
@@ -34,12 +36,14 @@ const ACTIVITIES = [
 ];
 
 export default function Activities() {
+  const events = getSortedEvents();
+
   return (
     <>
       <section className="page-header">
         <div className="container">
           <span className="eyebrow">What We've Been Up To</span>
-          <h1>Activities &amp; Programs</h1>
+          <h1>Activities &amp; Events</h1>
         </div>
       </section>
 
@@ -57,7 +61,24 @@ export default function Activities() {
         </div>
       </section>
 
-      <section className="section section-alt">
+      {events.length > 0 && (
+        <section className="section section-alt">
+          <div className="container">
+            <div className="section-header">
+              <span className="eyebrow">Save the Date</span>
+              <h2>Current Events</h2>
+              <p>Upcoming and recent club programs featured here alongside our service activities.</p>
+            </div>
+            <div className="events-grid">
+              {events.map((event) => (
+                <EventCard key={event.id} event={event} variant="full" />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="section">
         <div className="container">
           <div className="cta-banner">
             <h2>Have a project idea?</h2>
