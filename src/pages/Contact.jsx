@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from "../data/email.js";
+import Seo from "../components/Seo.jsx";
 
 const DEVELOPERS = [
   {
@@ -57,6 +58,11 @@ export default function Contact() {
 
   return (
     <>
+      <Seo
+        title="Contact Us"
+        description="Get in touch with the Leo Club of Kathmandu Budigandaki — reach us by email, social media, or find us in Kathmandu, Nepal."
+        path="/contact"
+      />
       <section className="page-header">
         <div className="container">
           <span className="eyebrow">Reach Out</span>
@@ -189,7 +195,7 @@ export default function Contact() {
             {DEVELOPERS.map((d) => (
               <div className="team-card" key={d.name}>
                 <div className="team-photo">
-                  <img src={d.photo} alt={d.name} />
+                  <img src={d.photo} alt={`${d.name}, ${d.role}`} />
                 </div>
                 <div className="team-body">
                   <h3>{d.name}</h3>

@@ -1,6 +1,13 @@
+import Seo from "../components/Seo.jsx";
+
 export default function About() {
   return (
     <>
+      <Seo
+        title="About Us"
+        description="Learn about the Leo Club of Kathmandu Budigandaki (Club No. 136440), chartered in 2018 under the Lions Club of Kathmandu Budhi Gandaki. Discover our mission of Leadership, Experience, and Opportunity."
+        path="/about"
+      />
       <section className="page-header">
         <div className="container">
           <span className="eyebrow">About Us</span>
@@ -32,7 +39,7 @@ export default function About() {
             </div>
           </div>
           <div className="media">
-            <img src="/logo.png" alt="Club emblem" />
+            <img src="/logo.png" alt="Leo Club of Kathmandu Budigandaki official emblem" />
           </div>
         </div>
       </section>
@@ -128,7 +135,7 @@ export default function About() {
           <ul className="timeline" style={{ maxWidth: 640, margin: "0 auto" }}>
             <li>
               <span className="year">2018</span>
-              <h4>Club Chartered by Leo Suresh Adhikari</h4>
+              <h3>Club Chartered by Leo Suresh Adhikari</h3>
               <p>
                The Leo Club of Kathmandu Budhigandaki was officially established and chartered as Leo Club No. 136440, under the sponsorship of the Lions Club of Kathmandu Budhigandaki, with Leo Suresh Adhikari serving as its charter president.
               </p>
@@ -136,37 +143,37 @@ export default function About() {
 
             <li>
               <span className="year">2020/21</span>
-              <h4>Presidency of Leo Sashanka Pandey</h4>
+              <h3>Presidency of Leo Sashanka Pandey</h3>
               <p>The 2020/21 Lions Year marked a new chapter in the club’s journey under the leadership of Leo Sashanka Pandey, with a continued focus on growth, service, and fellowship. </p>
             </li>
 
             <li>
               <span className="year">2022/23</span>
-              <h4>Club Revival under Leo Pratap Ratna Bajracharya</h4>
+              <h3>Club Revival under Leo Pratap Ratna Bajracharya</h3>
               <p>The club was revived under the leadership of Leo Pratap Ratna Bajracharya during the 2022/23 Lions Year, marking a new chapter in its journey of service and leadership.</p>
             </li>
 
             <li>
               <span className="year">2023/24</span>
-              <h4>Presidency of Leo Aawash Regmi</h4>
+              <h3>Presidency of Leo Aawash Regmi</h3>
               <p> Under the presidency of Leo Aawash Regmi, the club continued to strengthen its service initiatives and engagement within the community. </p>
             </li>
 
             <li>
               <span className="year">2024/25</span>
-              <h4>Presidency of Leo Ujjwal Karki</h4>
+              <h3>Presidency of Leo Ujjwal Karki</h3>
               <p> Under the presidency of Leo Ujjwal Karki, the club focused on strengthening fellowship and building meaningful relationships with fellow Leo Clubs, laying the foundation for greater collaboration and collective service. </p>
             </li>
 
             <li>
               <span className="year">2025/26</span>
-              <h4>Presidency of Leo Sijen Dangol</h4>
+              <h3>Presidency of Leo Sijen Dangol</h3>
               <p> Building on the strong fellowship established in previous years, the club organized impactful service projects, providing blankets, sanitary pads, stationery items, and other essential supplies to those in need. </p>
             </li>
 
             <li>
               <span className="year">2026/27</span>
-              <h4>Presidency of Leo Prabin Paudel</h4>
+              <h3>Presidency of Leo Prabin Paudel</h3>
               <p>
                 Under the ongoing presidency of Leo Prabin Paudel, the club is placing a stronger focus on health and medical initiatives, working to expand its impact through health awareness programs, medical support, and community-focused healthcare projects.
               </p>

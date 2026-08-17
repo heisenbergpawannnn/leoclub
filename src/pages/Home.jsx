@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { getUpcomingEvents } from "../data/events.js";
 import { GALLERY_EVENTS } from "../data/gallery.js";
 import EventCard from "../components/EventCard.jsx";
+import Seo from "../components/Seo.jsx";
 
 export default function Home() {
   const upcoming = getUpcomingEvents().slice(0, 3);
@@ -9,6 +10,10 @@ export default function Home() {
 
   return (
     <>
+      <Seo
+        description="Leo Club of Kathmandu Budigandaki — a youth service organization in Kathmandu, Nepal, running health camps, blood donation drives, and community service projects since 2018. Together We Serve, Together We Lead."
+        path="/"
+      />
       <section className="hero">
         <div className="container hero-inner">
           <div>
@@ -152,7 +157,7 @@ export default function Home() {
       <section className="section section-alt">
         <div className="container two-col">
           <div className="media">
-            <img src="/logo.png" alt="Club emblem" />
+            <img src="/logo.png" alt="Leo Club of Kathmandu Budigandaki official emblem" />
           </div>
           <div>
             <span

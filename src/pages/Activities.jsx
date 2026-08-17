@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { getSortedEvents } from "../data/events.js";
 import EventCard from "../components/EventCard.jsx";
+import Seo from "../components/Seo.jsx";
 
 const ACTIVITIES = [
   {
@@ -40,6 +41,11 @@ export default function Activities() {
 
   return (
     <>
+      <Seo
+        title="Activities & Events"
+        description="Explore the Leo Club of Kathmandu Budigandaki's community service activities and events — health camps, blood donation drives, tree plantation, hunger relief programs, and more."
+        path="/activities"
+      />
       <section className="page-header">
         <div className="container">
           <span className="eyebrow">What We've Been Up To</span>

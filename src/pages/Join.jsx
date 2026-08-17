@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { JOIN_FORM_ENDPOINT } from "../data/join.js";
+import Seo from "../components/Seo.jsx";
 
 const MAX_FILE_BYTES = 8 * 1024 * 1024; // 8MB — keeps the base64 payload well under Apps Script's request limit
 
@@ -150,6 +151,11 @@ export default function Join() {
 
   return (
     <>
+      <Seo
+        title="Become a Member"
+        description="Join the Leo Club of Kathmandu Budigandaki and become part of a youth-led movement of service, leadership, and community impact in Kathmandu, Nepal."
+        path="/join"
+      />
       <section className="page-header">
         <div className="container">
           <span className="eyebrow">Member Details — LCK Budigandaki 2026/27</span>

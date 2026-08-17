@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { GALLERY_EVENTS } from "../data/gallery.js";
+import Seo from "../components/Seo.jsx";
 
 export default function Gallery() {
   // { eventIndex, photoIndex } while a lightbox is open, otherwise null
@@ -34,6 +35,11 @@ export default function Gallery() {
 
   return (
     <>
+      <Seo
+        title="Gallery"
+        description="Photos from the Leo Club of Kathmandu Budigandaki's community service projects — blood donation camps, tree plantation, health camps, and fellowship events."
+        path="/gallery"
+      />
       <section className="page-header">
         <div className="container">
           <span className="eyebrow">Moments From Our Work</span>

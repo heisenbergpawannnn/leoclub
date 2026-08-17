@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div>
           <div className="footer-brand">
-            <img src="/logo.png" alt="Club logo" />
+            <img src="/logo.png" alt="Leo Club of Kathmandu Budigandaki official emblem" />
             <strong>Leo Club of Kathmandu Budigandaki</strong>
           </div>
           <p>

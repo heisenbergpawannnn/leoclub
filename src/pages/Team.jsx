@@ -1,3 +1,5 @@
+import Seo from "../components/Seo.jsx";
+
 // Leadership / members list.
 // Photos live in public/team/ (compressed from the originals submitted by
 // the club). To add someone new: drop a photo in public/team/, add an
@@ -41,6 +43,11 @@ const PRESIDENTS = [
 export default function Team() {
   return (
     <>
+      <Seo
+        title="Our Team"
+        description="Meet the leadership and members of the Leo Club of Kathmandu Budigandaki, plus our presidential legacy since 2018."
+        path="/team"
+      />
       <section className="page-header">
         <div className="container">
           <span className="eyebrow">The People Behind the Work</span>
@@ -60,7 +67,7 @@ export default function Team() {
               <div className="team-card" key={m.name}>
                 <div className="team-photo">
                   {m.photo ? (
-                    <img src={m.photo} alt={m.name} />
+                    <img src={m.photo} alt={`${m.name}, ${m.role}`} />
                   ) : (
                     <span className="team-photo-fallback">&#128100;</span>
                   )}
@@ -90,7 +97,7 @@ export default function Team() {
               <div className="team-card" key={p.name}>
                 <div className="team-photo">
                   {p.photo ? (
-                    <img src={p.photo} alt={p.name} />
+                    <img src={p.photo} alt={`${p.name}, ${p.role}`} />
                   ) : (
                     <span className="team-photo-fallback">&#128100;</span>
                   )}
