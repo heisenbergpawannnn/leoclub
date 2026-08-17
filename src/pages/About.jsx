@@ -38,6 +38,49 @@ export default function About() {
       </section>
 
       <section className="section section-alt">
+        <div className="container two-col">
+          <div className="media">
+            <img
+              src="/lions-club-logo.png"
+              alt="Lions Club of Kathmandu Budhi Gandaki emblem"
+            />
+          </div>
+          <div>
+            <span className="eyebrow">Our Sponsoring Club</span>
+            <h2>Lions Club of Kathmandu Budhi Gandaki</h2>
+            <p>
+              Empowering youth through leadership, service, and community development since
+              2017. The Lions Club of Kathmandu Budhi Gandaki is our chartering and
+              sponsoring body — the parent Lions club that made the founding of our Leo club
+              possible and continues to guide and support our service journey today.
+            </p>
+            <p>
+              Founded in 2017, the club started with a simple idea: bring together
+              passionate leaders who want to make a difference. What began as a small group
+              of dedicated individuals has grown into a vibrant community of over 100 active
+              members, partnering with organizations like the Nepal Red Cross Society and
+              Rotaract Club of Kathmandu to create lasting impact in the community.
+            </p>
+            <div className="badge-row">
+              <span className="badge">Sponsoring Club</span>
+              <span className="badge">Chartered 2017</span>
+              <span className="badge">100+ Members</span>
+            </div>
+            <p style={{ marginTop: 24 }}>
+              <a
+                className="btn btn-outline-dark"
+                href="https://lionsbudigandaki.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Lions Club of Kathmandu Budhi Gandaki &rarr;
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <span className="eyebrow">Our Motto</span>
@@ -76,7 +119,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-alt">
         <div className="container">
           <div className="section-header">
             <span className="eyebrow">Our Journey</span>

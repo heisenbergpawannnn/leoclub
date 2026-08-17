@@ -540,6 +540,16 @@ a { color: inherit; text-decoration: none; }
 .team-body a { font-size: 0.82rem; color: var(--navy); font-weight: 600; }
 .team-body a:hover { color: var(--sky); }
 
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+@media (max-width: 560px) { .dev-grid { grid-template-columns: 1fr; max-width: 320px; } }
+.dev-links { display: flex; flex-direction: column; gap: 6px; }
+
 /* ---------- Events ---------- */
 .events-grid {
   display: grid;

@@ -3,6 +3,25 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from "../data/email.js";
 
+const DEVELOPERS = [
+  {
+    name: "Pawan Raj Pandey",
+    role: "IT Lead",
+    photo: "/team/pawan-raj-pandey.jpg",
+    email: "pawanpandey1251@gmail.com",
+    website: "https://pawanrajpandey.com.np",
+    websiteLabel: "pawanrajpandey.com.np",
+  },
+  {
+    name: "Prabin Paudel",
+    role: "President",
+    photo: "/team/prabin-paudel.jpg",
+    email: "prabinpaudel43@gmail.com",
+    website: "https://www.prabin-paudel.com.np/",
+    websiteLabel: "prabin-paudel.com.np",
+  },
+];
+
 export default function Contact() {
   const formRef = useRef(null);
   const [status, setStatus] = useState("");
@@ -153,6 +172,52 @@ export default function Contact() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <span className="eyebrow">Behind the Scenes</span>
+            <h2>Designed, Built &amp; Maintained By</h2>
+            <p>
+              This website was designed, built, and is maintained by IT Lead{" "}
+              <strong>Pawan Raj Pandey</strong> and President <strong>Prabin Paudel</strong>.
+            </p>
+          </div>
+          <div className="dev-grid">
+            {DEVELOPERS.map((d) => (
+              <div className="team-card" key={d.name}>
+                <div className="team-photo">
+                  <img src={d.photo} alt={d.name} />
+                </div>
+                <div className="team-body">
+                  <h3>{d.name}</h3>
+                  <p className="team-role">{d.role}</p>
+                  <div className="dev-links">
+                    <a href={`mailto:${d.email}`}>{d.email}</a>
+                    <a href={d.website} target="_blank" rel="noopener noreferrer">
+                      {d.websiteLabel} &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p
+            style={{
+              textAlign: "center",
+              maxWidth: 640,
+              margin: "36px auto 0",
+              color: "var(--muted)",
+            }}
+          >
+            This site was built to showcase the activities, stories, and impact of our
+            community, a labour of love alongside everything else we do as Leos. If you
+            have any inquiries, suggestions, or feedback about the website itself, we'd love
+            to hear from you at the emails above. Thank you for visiting, and for supporting
+            us along the way.
+          </p>
         </div>
       </section>
     </>

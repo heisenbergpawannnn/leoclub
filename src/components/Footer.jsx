@@ -50,6 +50,11 @@ export default function Footer() {
           <h4>Affiliation</h4>
           <ul>
             <li>
+              <a href="https://lionsbudigandaki.org/" target="_blank" rel="noopener noreferrer">
+                Lions Club of Kathmandu Budhi Gandaki
+              </a>
+            </li>
+            <li>
               <a href="https://www.lionsclubs.org" target="_blank" rel="noopener noreferrer">
                 Lions Clubs International
               </a>

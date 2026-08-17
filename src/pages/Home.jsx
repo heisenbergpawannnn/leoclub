@@ -13,11 +13,7 @@ export default function Home() {
         <div className="container hero-inner">
           <div>
             <span className="eyebrow">Leo Club of Kathmandu Budigandaki</span>
-            <h1>
-              Together We Serve,
-              <br />
-              Together We Lead.
-            </h1>
+            <h1>Together We Serve, Together We Lead.</h1>
             <p className="lead">
               We're a youth service organization in Kathmandu, Nepal — part of the global
               Leo Club movement sponsored by Lions Clubs International. Since 2018, we've
