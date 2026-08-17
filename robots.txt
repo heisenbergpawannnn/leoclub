@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lckbudigandaki.org.np/sitemap.xml

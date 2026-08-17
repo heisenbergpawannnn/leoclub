@@ -3,9 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#14303f" />
     <title>Leo Club of Kathmandu Budigandaki</title>
-    <meta name="description" content="Official website of the Leo Club of Kathmandu Budigandaki — Together We Serve, Together We Lead. Club No. 136440, established 2018." />
+    <meta name="description" content="Official website of the Leo Club of Kathmandu Budigandaki — a youth service organization in Kathmandu, Nepal running health camps, blood donation drives, and community service since 2018. Together We Serve, Together We Lead." />
+    <link rel="canonical" href="https://lckbudigandaki.org.np/" />
+
+    <!-- Open Graph / social link previews (WhatsApp, Facebook, LinkedIn, Slack, etc.)
+         These static defaults are what non-JS scrapers see on every route, since this
+         is a client-rendered SPA with no prerendering step. Per-page <title>/description
+         overrides (see src/components/Seo.jsx) only apply for crawlers that execute JS,
+         such as Googlebot. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Leo Club of Kathmandu Budigandaki" />
+    <meta property="og:title" content="Leo Club of Kathmandu Budigandaki" />
+    <meta property="og:description" content="A youth service organization in Kathmandu, Nepal running health camps, blood donation drives, and community service since 2018. Together We Serve, Together We Lead." />
+    <meta property="og:url" content="https://lckbudigandaki.org.np/" />
+    <meta property="og:image" content="https://lckbudigandaki.org.np/logo.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Leo Club of Kathmandu Budigandaki" />
+    <meta name="twitter:description" content="A youth service organization in Kathmandu, Nepal running health camps, blood donation drives, and community service since 2018. Together We Serve, Together We Lead." />
+    <meta name="twitter:image" content="https://lckbudigandaki.org.np/logo.png" />
+
+    <!-- Organization structured data (JSON-LD) — helps Google understand the club as an
+         entity (knowledge panel, sitelinks) independent of which route was crawled. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Leo Club of Kathmandu Budigandaki",
+        "alternateName": "LCK Budigandaki",
+        "url": "https://lckbudigandaki.org.np/",
+        "logo": "https://lckbudigandaki.org.np/logo.png",
+        "description": "A youth service organization in Kathmandu, Nepal, part of the global Leo Club movement sponsored by Lions Clubs International. Club No. 136440, established 2018.",
+        "foundingDate": "2018",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kathmandu",
+          "addressCountry": "NP"
+        },
+        "sameAs": [
+          "https://www.facebook.com/leobudigandaki/",
+          "https://np.linkedin.com/company/lckbudigandaki"
+        ]
+      }
+    </script>
+
+    <!-- Google Analytics 4 — replace G-XXXXXXXXXX below with your real Measurement ID
+         (Google Analytics → Admin → Data Streams → your web stream) once created. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+
     <script>
       (function () {
         const redirect = sessionStorage.getItem("redirect");
@@ -16,7 +73,7 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-mHZFx-mV.js"></script>
+    <script type="module" crossorigin src="/assets/index-B3EM-fFJ.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-0NJPm1c8.css">
   </head>
   <body>
