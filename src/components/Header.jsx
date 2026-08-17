@@ -5,9 +5,9 @@ import { useEffect } from "react";
 const NAV_LINKS = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/activities", label: "Activities & Events" },
   { to: "/team", label: "Team" },
   { to: "/gallery", label: "Gallery" },
+  { to: "/activities", label: "Events" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -47,7 +47,7 @@ export default function Header() {
             </NavLink>
           ))}
           <NavLink className="btn btn-primary btn-nav" to="/join">
-            Become a Member
+            Join Us
           </NavLink>
         </div>
       </nav>
