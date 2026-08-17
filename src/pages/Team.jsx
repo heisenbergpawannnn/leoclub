@@ -7,8 +7,8 @@ import Seo from "../components/Seo.jsx";
 const MEMBERS = [
   { name: "Prabin Paudel", role: "President", photo: "/team/prabin-paudel.jpg", linkedin: "https://www.linkedin.com/in/prabin-paudel-a8a315231/" },
   { name: "Jebish Pradhan", role: "Vice President", photo: "/team/jebish-pradhan.jpg", linkedin: "https://www.linkedin.com/in/jebishpradhan/" },
-  { name: "Pawan Raj Pandey", role: "IT Lead", photo: "/team/pawan-raj-pandey.jpg", linkedin: "https://www.linkedin.com/in/pawanrajpandey/" },
   { name: "Gaurav Neupane", role: "Secretary", photo: "/team/gaurav-neupane.jpg", linkedin: "https://www.linkedin.com/in/gaurav-neupane-64a0122a3/" },
+  { name: "Pawan Raj Pandey", role: "IT Lead", photo: "/team/pawan-raj-pandey.jpg", linkedin: "https://www.linkedin.com/in/pawanrajpandey/" },
 
   { name: "Abishek Thapa", role: "Club Director", photo: "/team/abishek-thapa.jpg", linkedin: "https://www.linkedin.com/in/abishek-thapa-9a77422a4/" },
   { name: "Aayush Regmi", role: "International Director", photo: "/team/aayush-regmi.jpg", linkedin: "https://www.linkedin.com/in/aayushregmi56/" },
@@ -33,7 +33,6 @@ const MEMBERS = [
 ];
 
 const PRESIDENTS = [
-  { name: "Prabin Paudel", role: "President, L.Y. 2026/27", photo: "/presidents/prabin-paudel.jpg", linkedin: "https://www.linkedin.com/in/prabin-paudel-a8a315231/" },
   { name: "Sijen Dangol", role: "President, L.Y. 2025/26", photo: "/presidents/sijen-dangol.jpg", linkedin: "https://www.linkedin.com/in/sijendangol/" },
   { name: "Ujjwal Karki", role: "President, L.Y. 2024/25", photo: "/presidents/ujjwal-karki.jpg"  },
   { name: "Aawash Regmi", role: "President, L.Y. 2023/24", photo: "/presidents/aawash-regmi.jpg", linkedin: "https://www.linkedin.com/in/aawash-regmi-3426b21a7/" },

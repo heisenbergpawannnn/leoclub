@@ -9,6 +9,45 @@
 
 export const EVENTS = [
   {
+    id: "health-camp-2026-07-11",
+    emoji: "🩸",
+    title: "Diabetes and Hypertension Checkup Camp",
+    tagline: "Promoting awareness, early detection, and healthier communities.",
+    description:
+      "Leo Club of Kathmandu Budigandaki, in collaboration with the Lions of Budigandaki, is organizing a free Diabetes and Hypertension Checkup Camp to promote preventive healthcare and encourage early detection. The camp provides community members with accessible health screenings and an opportunity to learn more about managing diabetes and high blood pressure. 🦁❤️",
+    date: "2026-07-11",
+    startTime: "06:30",
+    endTime: "09:30",
+    location: "Radha Krishna Mandir, Raniban",
+    image: "/events/health-camp.jpg",
+  },
+  {
+    id: "shrawan-celebration-hunger-relief-2026",
+    emoji: "🌸",
+    title: "Shrawan Celebration & Hunger Relief Program",
+    tagline: "Celebrating Shrawan with joy, kindness, and community.",
+    description:
+      "Let us celebrate the month of Shrawan with children through a joyful community program combining celebration and service. The program includes serving khir, donating essential food items, distributing churas, applying mehendi, and sharing an evening of music and dance. The initiative brings together celebration, compassion, and meaningful community engagement. 🦁🌸",
+    date: "2026-07-25",
+    startTime: "13:00",
+    endTime: "19:00",
+    location: "Helping Hands Children Home, Nagarjun",
+    image: "/events/shrawan-celebration.jpg",
+  },
+  {
+    id: "first-general-meeting-2026-07-31",
+    emoji: "🦁",
+    title: "1st General Meeting",
+    tagline: "Coming together to plan, connect, and lead with purpose.",
+    description:
+      "LCK Budigandaki is organizinng its 1st General Meeting of the Lions Year 2026/27, bringing members together to discuss upcoming plans, programs, and organizational priorities. The meeting also provides an opportunity to strengthen team coordination, share ideas, and build a strong foundation for a meaningful and impactful year of service. 🦁🤝",
+    date: "2026-07-31",
+    startTime: "20:00",
+    endTime: "21:00",
+    location: "Google Meet",
+    image: "/events/general-meeting.jpg",
+  },
+  {
     id: "futsal-fellowship-match-2026-08-13",
     emoji: "⚽",
     title: "Futsal Fellowship Match",

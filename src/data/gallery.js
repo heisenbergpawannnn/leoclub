@@ -34,7 +34,7 @@ export const GALLERY_EVENTS = [
   },
   {
     id: "warm-blanket-distribution",
-    title: "Warm Blanket Distribution at Madarsa",
+    title: "Warm Blanket Distribution at Madarsa, Nuwakot",
     photos: [
       "/gallery/warm-blanket-distribution/blanket-distribution-1.jpg",
       "/gallery/warm-blanket-distribution/blanket-distribution-2.jpg"

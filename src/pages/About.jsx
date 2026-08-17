@@ -27,7 +27,7 @@ export default function About() {
               across Kathmandu and Nepal.
             </p>
             <p>
-              "Leo" stands for <strong>L</strong>eadership, <strong>E</strong>xperience, and{" "}
+              "LEO" stands for <strong>L</strong>eadership, <strong>E</strong>xperience, and{" "}
               <strong>O</strong>pportunity — the three pillars of the international Leo
               movement, which gives young people a platform to develop leadership skills
               while serving their communities.
@@ -64,14 +64,12 @@ export default function About() {
             <p>
               Founded in 2017, the club started with a simple idea: bring together
               passionate leaders who want to make a difference. What began as a small group
-              of dedicated individuals has grown into a vibrant community of over 100 active
-              members, partnering with organizations like the Nepal Red Cross Society and
-              Rotaract Club of Kathmandu to create lasting impact in the community.
+              of dedicated individuals has grown into a vibrant community, partnering with organizations 
+              like the Nepal Red Cross Society and Rotaract Club to create lasting impact in the community.
             </p>
             <div className="badge-row">
               <span className="badge">Sponsoring Club</span>
               <span className="badge">Chartered 2017</span>
-              <span className="badge">100+ Members</span>
             </div>
             <p style={{ marginTop: 24 }}>
               <a

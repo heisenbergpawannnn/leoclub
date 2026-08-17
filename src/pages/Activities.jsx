@@ -18,9 +18,9 @@ const ACTIVITIES = [
   },
   {
     icon: "🤝",
-    title: "Joint Leo Club Collaboration",
+    title: "Community Engagement",
     body:
-      "We've partnered with sister Leo clubs across Kathmandu on shared announcements and joint community events, strengthening the wider Leo network in the city.",
+      "We’ve partnered with local entities and organizations on shared announcements, joint community events, and collaborative initiatives, strengthening our network and expanding our collective impact across Kathmandu and beyond.",
   },
   {
     icon: "🏛️",
@@ -30,9 +30,9 @@ const ACTIVITIES = [
   },
   {
     icon: "🌍",
-    title: "Community Outreach",
+    title: "Joint Leo Club Collaboration",
     body:
-      "Ongoing outreach and volunteering work across Kathmandu, in line with the Lions/Leo mission of service above self.",
+      "We've partnered with sister Leo clubs across Nepal, in line with the Lions/Leo mission of service above self.",
   },
 ];
 
