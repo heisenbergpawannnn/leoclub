@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { useEffect } from "react";
 
 const NAV_LINKS = [
   { to: "/", label: "Home" },

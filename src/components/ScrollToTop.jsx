@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// React Router doesn't reset scroll position on navigation, so without this,
-// clicking an internal link while scrolled down (e.g. a footer link) leaves
-// the new page scrolled to the same spot instead of starting at the top.
+// React Router doesn't reset scroll on navigation, so without this a link
+// clicked while scrolled down lands on the new page still scrolled down.
 export default function ScrollToTop() {
   const { pathname } = useLocation();
 

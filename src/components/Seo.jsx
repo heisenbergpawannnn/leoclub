@@ -8,20 +8,9 @@ function setMeta(selector, content) {
   if (el) el.setAttribute("content", content);
 }
 
-/**
- * Sets the per-route title, meta description, canonical link, and Open
- * Graph / Twitter description by updating the tags already present in
- * index.html in place — rather than inserting new ones — so there is
- * always exactly one of each in the document (no duplicate <title>/
- * <meta name="description"> fighting over which one browsers or search
- * crawlers pick up).
- *
- * This only affects what real browsers and JS-executing crawlers (e.g.
- * Googlebot) see after the app mounts. Non-JS link-preview scrapers
- * (WhatsApp, Slack, etc.) never run the app at all, so they still see
- * the static defaults baked into index.html on every route — an
- * inherent limitation of a client-only SPA without a prerender/SSR step.
- */
+// Updates the title/description/canonical/OG tags already in index.html
+// in place for the current route. Only affects JS-executing clients —
+// non-JS scrapers (WhatsApp, Slack, etc.) still see the static defaults.
 export default function Seo({ title, description, path = "" }) {
   useEffect(() => {
     const url = `${SITE_URL}${path}`;

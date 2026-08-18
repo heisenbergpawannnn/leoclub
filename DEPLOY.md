@@ -20,7 +20,3 @@ Cloudflare DNS notes
 - For a `www` subdomain create a CNAME to `<your-github-username>.github.io` (replace with your username).
 - IMPORTANT: In Cloudflare set the DNS entries to "DNS only" (grey cloud). GitHub Pages does not support Cloudflare's proxied traffic (orange cloud) for custom domains.
 - After DNS changes, wait for propagation and then enable HTTPS enforcement in GitHub Pages settings.
-
-If you'd like I can also:
-- Add a `gh-pages` deploy script that uses `gh-pages` npm package, or
-- Customize the Action to run on other branches.

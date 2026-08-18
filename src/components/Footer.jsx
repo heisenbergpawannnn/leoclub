@@ -40,7 +40,7 @@ export default function Footer() {
           <h4>Explore</h4>
           <ul>
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/activities">Activities &amp; Events</Link></li>
+            <li><Link to="/activities">Events</Link></li>
             <li><Link to="/team">Team</Link></li>
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/contact">Contact</Link></li>
