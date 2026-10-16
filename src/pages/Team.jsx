@@ -30,6 +30,7 @@ const MEMBERS = [
   { name: "Suraksha Giri", role: "General Member", photo: "/team/suraksha-giri.jpg" },
   { name: "Deepa Chapagain", role: "General Member", photo: "/team/deepa-chapagain.jpg" },
   { name: "Bina Dhakal", role: "General Member", photo: "/team/bina-dhakal.jpg" },
+  { name: "Nigita Kumal", role: "General Member", photo: "/team/nigita-kumal.jpg" },
 ];
 
 const PRESIDENTS = [
